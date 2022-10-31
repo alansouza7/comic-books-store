@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+
+:root{
+  --beige: #fefae0;
+  --light-brown: #d4a373;
+  --dark-brown: #283618;
+  --light-green: #0a9396;
+}
+
+/* Box sizing rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html{
+    scroll-behavior: smooth;
+    font-size: 62,5%;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    background-color: var(--beige);
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+
+  /* STYLES */
+ header{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 900px;
+    
+  }
+  
+  .products{
+    display: flex;
+  }
+
+  .comic-book{
+    width: 200px;
+    margin-right: 4rem;
+    border: 4px solid black;
+  }
+
+  .book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  .select-btn {
+    align-self: center;
+    margin-left: auto;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: var(--light-brown);
+    font-weight: 500;
+  }
+
+  .select-btn:hover{
+    border: 2px solid #606c38;
+  }
+
+  .products-container{
+    padding: 6rem 1rem 3rem 1rem;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* MODAL */
+
+  .modal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-title{
+    margin: 0 auto;
+  }
+
+  .products-selected,
+  .total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .products-selected{
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  .footer-book-name{
+    width: 150px;
+  }
+
+  .footer-product-info,
+  .modal-prices-div
+  {
+    display: flex;
+    align-items: center;
+  }
+  .footer-product-info{
+    gap: 1rem;
+  }
+  .modal-prices-div{
+    gap: 0.5rem;
+  }
+
+  .qtd{
+    width: 40px;
+    text-align: center;
+  }
+
+  .finish-order-btn{
+    width: 30%;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+    background-color: var(--light-brown);
+    border: none;
+    border-radius: 5px;
+  }
+
+  .total{
+    margin-top: 2rem;
+  }
+
+  /* PAYMENT */
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 25px;
+  }
+
+  .payment-modal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 480px;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #fffcf2;
+  }
+
+  .exit-btn{
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .exit-btn:hover{
+    transform: scale(1.2);
+  }
+
+  input[type="text"]{
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card-payment-btn{
+    padding: 1rem 0;
+    margin-top: 1.3em;
+    background-color: var(--light-brown);
+    border: none;
+    border-radius: 5px;
+  }
+
+  .hide-modal{
+    display: none;
+  }
+
+  /* TYPOGRAPHY */
+  .book-tittle{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark-brown);
+  }
+
+  .book-price{
+    font-size: 1.3rem;
+    color: var(--light-green);
+  }
+
+  /* TYPOGRAPHY MODAL */
+  .footer-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2em;
+    color: var(--dark-brown);
+  }
+
+  .delete-btn{
+    font-size: 0.6rem;
+    padding: 0.1rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-brown);
+  }
+
+  .total-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+  }
+
+  .total-price{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 0.2em;
+    color: var(--light-green);
+  }
+
+  /*TYPOGRAPHY PAYMENT */
+
+  .payment-title{
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 0.6em;
+  }
+
+  .order-message{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--light-green);
+  }
+
+  /* MEDIA */
+
+  @media (max-width: 840px) {
+    .spider-man-logo{
+        width: 100%;
+    }
+    .products{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .select-btn{
+    margin-left: unset;
+    }
+
+    .book-info{
+        align-items: center;
+    }
+    
+    .comic-book{
+        margin-right: 0;
+    }
+
+    .select-btn{
+        margin-top: 20px;
+    }
+
+    .finish-order-btn{
+      font-size: 0.8rem;
+    }
+  }
+
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }

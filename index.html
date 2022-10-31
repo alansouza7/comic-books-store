@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Comic Books Store</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img class="spider-man-logo" src="images/spiderman-removebg-preview.png" alt="marvel logo">
+        </header>
+
+        <main id="main" class="main"></main>
+
+        <footer id="modal" class="modal hidden products-container">
+            <p class="footer-title">Your Order</p>
+            <div id="modal-container"></div>
+            <div class="total">
+                <p class="total-title">Total:</p>
+                <p id="total-price" class="total-price"><span>£</span></p>
+            </div>
+
+            <button id="complete-order-btn" class="finish-order-btn">COMPLETE ORDER</button>
+        </footer>
+    </div>
+    
+
+    <div class="payment-modal hide-modal">
+        <div data-exit="exit-btn" id="exit-btn" class="exit-btn">
+            <img src="images/exit-btn.png" alt="exit button">
+        </div>
+
+    <h2 class="payment-title">Enter card details</h2>
+
+    <form id="form" class="form">
+    <input type="text"
+    id="card-holder"
+    name="card-holder"
+    placeholder="Enter your name"
+    required>
+
+    <input type="text"
+    id="card-number"
+    name="card-number"
+    placeholder="Enter card number"
+    data-maxlength="16" 
+    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1'); this.value=this.value.slice(0,this.dataset.maxlength)"
+    required>
+
+    <input type="text"
+    id="cvv"
+    name="cvv"
+    placeholder="Enter CVV"
+    data-maxlength="3" 
+    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1'); this.value=this.value.slice(0,this.dataset.maxlength)"
+    required>
+
+    <button data-payOrder="form" id="card-payment-btn" class="card-payment-btn" type="submit">PAY</button>
+    </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
