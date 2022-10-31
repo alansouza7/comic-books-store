@@ -1,6 +1,6 @@
 # Comic Books Store 📙
 
-This is a comic book store web-site. It's part of the final solo project on module 5 of Scrimba Frontend career path. It's mainly built with the purpose of putting into practise everything learned so far in the JavaScript module 5.
+This is a comic book store website. It's part of the final solo project on module 5 of Scrimba Frontend career path. It's mainly built with the purpose of putting into practice everything learned so far in the JavaScript module 5.
 
 
 [<img src="images\comic-books-store.gif">](https://alansouza7.github.io/comic-books-store/)
@@ -31,16 +31,19 @@ This is a comic book store web-site. It's part of the final solo project on modu
 ## 💻 Reflection
 
 
-- I always try to create something of my own, to create muscle memory as well as to have fun in the process of learning and this project has been built with the purpose of putting into practice everything learned so far from the Scrimba and Dev em Dobro frontend developer courses. I've spent 3 days finishing this off, spending the majority of the time making adjustments to the JS functionality. 
+- I always try to create something of my own in order to create muscle memory as well as to have fun in the process of learning and this project has been built with the purpose of putting into practice everything learned so far from the Scrimba and Dev em Dobro frontend developer courses. I've spent 3 days finishing this off, most of the time making adjustments to the JS functionality. 
 
 
-- I wanted to create a project where I could put use everything learned so far with JavaScript, such as filter and method arrays, forEach loops, findind out the index of the array using for each loop, rendering everything out using JS, data-attribute and much more. It was very challenging yet rewarding.
+- I wanted to create a project where I could put to use everything learned so far with JavaScript, such as filter and method arrays, forEach loops, finding out the index of the array using for each loop, rendering everything out using JS, data-attribute, FormData, and much more. It was very challenging yet rewarding.
 
 
-- This was way harder than I thought it would be, but it opened up my mind in so many ways. I could literally feel streching beyond my limit, and solving every problem I faced in the way was very rewarding.
+- This was way harder than I thought it would be, but it opened my mind in many ways. I could literally feel stretching beyond my limits, and solving every problem I faced on the way was very rewarding.
 
 
 - Skills learned: e.target.id, filter( ), includes( ), rendering out using JS, data-attribute, adding styles using JS, FormData.
+
+
+
 
 
 <br>
